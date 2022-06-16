@@ -11,6 +11,7 @@ public class GithubPackages {
      * @return The result of {@code a + b}.
      */
     public static int addTwo(int a, int b) {
-        return a + b;
+        int result = a + b;
+        return result;
     }
 }
