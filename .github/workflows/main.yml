@@ -37,8 +37,17 @@ jobs:
       - name: Step 4 - List ou the current directory
         run: ls -a
         
-      - name: Step 5 - What is in the target folder?
-        run: |
-          cd target
-          ls -a
+      #- name: Step 5 - What is in the target folder?
+      #  run: |
+      #    cd target
+      #    ls -a
+          
+      - name: Step 6 - Upload to FTP
+        uses: bayssmekanique/action-simple-file-upload@v1
+        with:
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.FTP_HOST }}
+          src: target/GithubPackages-1.0-SNAPSHOT.jar
+          dest: /htdocs
           
