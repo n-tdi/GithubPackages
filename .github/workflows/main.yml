@@ -49,5 +49,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           host: ${{ secrets.FTP_HOST }}
           src: target/GithubPackages-1.0-SNAPSHOT.jar
-          dest: /htdocs
+          dest: /htdocs/test.jar
           
