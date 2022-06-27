@@ -14,4 +14,20 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>redempt.dev</id>
+            <url>https://redempt.dev</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.Redempt</groupId>
+            <artifactId>RedLib</artifactId>
+            <version>6.5.1.8 </version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
 </project>
